@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/fondo"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:text="Series"
+        android:id="@+id/bt_series"
+        android:layout_marginTop="130dp"
+        android:alpha="0.6"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/bt_peliculas"
+        android:layout_toEndOf="@+id/bt_peliculas" />
+
+    <Button
+        android:text="Peliculas"
+        android:id="@+id/bt_peliculas"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:alpha="0.6"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_alignTop="@+id/bt_series"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
